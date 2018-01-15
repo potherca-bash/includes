@@ -54,10 +54,10 @@ Simply include a file using `source`:
 
     #!/usr/bin/env bash
 
-    source './deps/declare/declare.bash-options.inc'
-    source './deps/comment/license/comment.license-gpl3.inc'
-    source './deps/declare/color.inc'
-    source './deps/declare/exit-codes.inc'
+    source './deps/src/declare/declare.bash-options.inc'
+    source './deps/src/comment/license/comment.license-gpl3.inc'
+    source './deps/src/declare/color.inc'
+    source './deps/src/declare/exit-codes.inc'
 
     # ...
     # Script logic goes here
