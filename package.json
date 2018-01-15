@@ -6,7 +6,15 @@
     "scripts": []
     "files": [
         "LICENSE",
-        "README.md"
+        "README.md",
+        "src/comment/comment.code-style-potherca.inc",
+        "src/comment/license/comment.license-gpl3.inc",
+        "src/comment/license/comment.license-mit.inc",
+        "src/comment/license/comment.license-proprietary.inc",
+        "src/declare/declare.bash-options.inc",
+        "src/declare/declare.color.inc",
+        "src/declare/declare.exit-codes.inc",
+        "src/declare/declare.output.inc"
     ],
     "author": "Potherca <potherca@gmail.com>",
     "license": "GPL-3.0",
