@@ -2,8 +2,8 @@
     "name": "includes",
     "description": "Non-code building blocks for BASH scripts.",
     "global": "false",
-    "install": ""
-    "scripts": []
+    "install": "",
+    "scripts": [],
     "files": [
         "LICENSE",
         "README.md",
@@ -18,6 +18,5 @@
     ],
     "author": "Potherca <potherca@gmail.com>",
     "license": "GPL-3.0",
-    "homepage": "https://github.com/potherca-bash/includes",
+    "homepage": "https://github.com/potherca-bash/includes"
 }
-
