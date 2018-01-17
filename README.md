@@ -45,7 +45,7 @@ that `bpkg` has been run in.
 
 The latest release will always be tagged `latests`. To download the latest archive:
 
-    curl -o 'includes.tar.gz' 'https://github.com/potherca-bash/includes/archive/latest.tar.gz'
+    curl -L -o 'includes.tar.gz' 'https://github.com/potherca-bash/includes/archive/latest.tar.gz'
     tar -xvzf 'includes.tar.gz'
 
 ## Usage
