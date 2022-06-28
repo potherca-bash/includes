@@ -1,3 +1,4 @@
+![](https://user-images.githubusercontent.com/195757/176205027-aa2fc0f5-30f6-4e70-8cde-22473bcc0fd6.png)
 
 # Potherca BASH -- Includes
 
