@@ -17,7 +17,7 @@
         "src/declare/declare.exit-codes.inc",
         "src/declare/declare.output.inc"
     ],
-    "author": "Potherca <potherca@gmail.com>",
+    "author": "Ben Peachey <bash@pother.ca>",
     "license": "MPL-2.0",
     "homepage": "https://github.com/potherca-bash/includes"
 }
