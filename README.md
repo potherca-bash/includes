@@ -1,18 +1,14 @@
-![](https://user-images.githubusercontent.com/195757/176205027-aa2fc0f5-30f6-4e70-8cde-22473bcc0fd6.png)
-
 # Potherca BASH -- Includes
 
+![](https://user-images.githubusercontent.com/195757/176205027-aa2fc0f5-30f6-4e70-8cde-22473bcc0fd6.png)
+
+[![project-stage-shield][project-stage-shield]][project-stage-page]
+[![license-shield][license-shield]][license-page]
+![Maintained][maintained-shield]
+[![Potherca][potherca-shield]][potherca-site]
+[![standard-readme compliant][standard-readme-shield]][standard-readme-link]
+
 Non-code building blocks for BASH scripts.
-
-[![project-stage-badge][project-stage-badge]][project-stage-page]
-[![license-badge][license-badge]][license-page]
-
-[license-badge]: https://img.shields.io/badge/License-GPL--3.0-blue.svg
-[license-page]: ./LICENSE
-[project-stage-badge]: http://img.shields.io/badge/Project%20Stage-Development-yellowgreen.svg
-[project-stage-page]: http://bl.ocks.org/potherca/raw/a2ae67caa3863a299ba0/
-
-## Introduction
 
 This repository contains files that hold comments, declarations or other common
 non-code lines often used in (my) BASH scripts. Instead of copy/pasting these
@@ -21,7 +17,16 @@ BPKG). They can then be included from BASH scripts using `source`.
 
 They are meant to serve as building blocks for BASH scripts.
 
-## Installation
+<!-- toc -->
+
+## Background
+
+When creating BASH script, I found myself copy/pasting certain lines of comment
+or code _over and over_. It seemed more sensible to separate those lines into
+separate files and just include the files from other scripts. This repository is
+part of that effort. Others can be found at https://github.com/potherca-bash/.
+
+## Install
 
 This repository can be installed in several ways:
 
@@ -33,60 +38,78 @@ This repository can be installed in several ways:
 
 Available as a [bpkg](http://www.bpkg.io/) package:
 
-    bpkg install 'potherca-bash/includes'
+```sh
+bpkg install 'potherca-bash/includes'
+```
 
 This will install all available files in the `deps/` directory of the project
 that `bpkg` has been run in.
 
 ### Cloning the repository
 
-    git clone 'git@github.com:potherca-bash/includes.git'
+```sh
+git clone 'git@github.com:potherca-bash/includes.git'
+```
 
 ### Downloading the archive
 
 The latest release will always be tagged `latests`. To download the latest archive:
 
-    curl -L -o 'includes.tar.gz' 'https://github.com/potherca-bash/includes/archive/latest.tar.gz'
-    tar -xvzf 'includes.tar.gz'
+```sh
+  curl -L -o 'includes.tar.gz' 'https://github.com/potherca-bash/includes/archive/latest.tar.gz'
+  tar -xvzf 'includes.tar.gz'
+```
 
 ## Usage
 
 Simply include a file using `source`:
 
-    #!/usr/bin/env bash
+```sh
+#!/usr/bin/env bash
 
 
-    source './deps/includes/src/declare/declare.bash-options.inc'
-    source './deps/includes/src/comment/license/comment.license-gpl3.inc'
-    source './deps/includes/src/declare/declare.color.inc'
-    source './deps/includes/src/declare/declare.exit-codes.inc'
+source './deps/includes/src/declare/declare.bash-options.inc'
+source './deps/includes/src/comment/license/comment.license-mpl2.inc'
+source './deps/includes/src/declare/declare.color.inc'
+source './deps/includes/src/declare/declare.exit-codes.inc'
 
-    # ...
-    # Script logic goes here
-    # ...
+# ...
+# Script logic goes here
+# ...
+```
 
 This works best when used during development, for production it is advisable to
 compile a version from the script that replaces the `source` entries with the
-content of the included file(s).
+content of the included file(s), for instance using [`inline-source`](https://github.com/potherca-bash/inline-source).
 
-## Development
+## Contributing
 
-To make code changes, fork this repository and install the needed dependecies:
-
-    cd './includes'
-    bpkg getdeps
+Issues can be reported at https://github.com/potherca-bash/includes/issues.
 
 Pull/Merge-request are welcomed.
 
-## Motivation
+To make code changes, fork this repository and install the needed dependencies:
 
-When creating BASH script, I found myself copy/pasting certain lines of comment
-or code _over and over_. It seemed more sensible to separate those lines into
-separate files and just include the files from other scripts. This repository is
-part of that effort. Others can be found at https://github.com/potherca-bash/.
+```sh
+cd './includes'
+bpkg getdeps
+```
 
-## Colophon
+## License
 
-- **Author**: Created by [Potherca](https://pother.ca/).
-- **License**: Licensed under the  [GPL-3.0 License](LICENSE) (GNU General Public License v3.0)
-- **Website**: https://github.com/potherca-bash/includes
+<link rel="stylesheet" href="https://pother.ca/CssBase/css/created-by-potherca.css">
+
+<p class="created-by">
+  This project is licensed under a <a rel="license" href="LICENSE">MPL-2.0 License</a>,
+  Created by <a class="potherca" href="https://pother.ca" rel="author">Potherca</a>
+</p>
+
+[license-page]: ./LICENSE
+[license-shield]: https://img.shields.io/badge/License-MPL--2.0-blue.svg
+[maintained-shield]: https://img.shields.io/maintenance/yes/2030.svg
+[potherca-shield]: https://img.shields.io/badge/Potherca_BASH-BA1515.svg?color=BA1515
+[potherca-site]: https://pother.ca/
+[project-stage-page]: https://blog.pother.ca/project-stages/
+[project-stage-shield]: http://img.shields.io/badge/Project%20Stage-Development-yellowgreen.svg
+[standard-readme-link]: https://github.com/RichardLitt/standard-readme
+[standard-readme-shield]: https://img.shields.io/badge/-Standard%20Readme-brightgreen.svg
